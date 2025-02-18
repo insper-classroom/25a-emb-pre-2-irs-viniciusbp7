@@ -13,7 +13,9 @@ void btn_callback(uint gpio, uint32_t events){
     if (gpio == BTN_R){
       flag=1;
     }
-    else if (gpio == BTN_G){
+  }
+  if (events==0x8){
+    if (gpio == BTN_G){
       flag=2;
     }
   }

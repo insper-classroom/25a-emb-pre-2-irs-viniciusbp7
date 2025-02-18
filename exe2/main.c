@@ -8,7 +8,7 @@ const int LED =4;
 
 void btn_callback(uint gpio, uint32_t events){
   if (events == 0x4) {
-    flag=1;
+    flag=1; 
   }
 }
 
